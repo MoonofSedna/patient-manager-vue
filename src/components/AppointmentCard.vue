@@ -23,7 +23,7 @@ const isEditing = computed(() => {
       class="flex items-center justify-between mb-4"
     >
       <h5
-        class="text-xl font-bold leading-none text-gray-900"
+        class="text-xl font-bold leading-none text-gray-900 uppercase"
       >
         ID #{{ id }}
       </h5>
