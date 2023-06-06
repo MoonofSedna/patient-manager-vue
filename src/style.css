@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form {
+    @apply bg-card-bg shadow-md rounded-md p-5;
+  }
+  .form label {
+    @apply font-semibold;
+  }
+  .form textarea {
+    @apply h-32 resize-none;
+  }
+  .btn-primary {
+    @apply bg-cyan-500 text-white font-semibold px-4 py-2 rounded-md w-full uppercase transition-colors duration-300 ease-in-out;
+  }
+
+  .btn-primary.danger {
+    @apply bg-red-400;
+  }
+
+  .btn-primary.danger:hover {
+    @apply bg-red-500;
+  }
+
+  .btn-primary:hover {
+    @apply bg-cyan-600;
+  }
+  .form-field {
+    @apply w-full border border-slate-300 rounded-lg p-2 mb-4;
+  }
+
+  .form-field:focus {
+    @apply border-cyan-200 outline-none;
+  }
+
+  .scroll::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .scroll::-webkit-scrollbar-track {
+    @apply bg-slate-200 rounded-lg;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    @apply bg-cyan-500 rounded-lg transition-colors duration-300 ease-in-out;
+  }
+
+  .scroll::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyan-600 transition-colors duration-300 ease-in-out;
+  }
+}
